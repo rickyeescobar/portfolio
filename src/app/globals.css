@@ -14,8 +14,31 @@
   }
 }
 
-body {
+/* body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor {
+  display: inline-block;
+  width: 24px;
+  height: 1em;
+  background-color: currentColor;
+  margin-left: 10px;
+  animation: blink 1s step-end infinite;
+  position: relative;
+  top: 2px;
 }
