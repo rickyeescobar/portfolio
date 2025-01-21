@@ -15,13 +15,13 @@ export default function About() {
       </div>
       <div className="w-full max-w-5xl px-4">
         <p className="text-white text-2xl font-light tracking-tight mb-12">
-          Hey there, I'm Ricky. I'm a software engineer from Houston, TX. Over
-          the past 2 years, I've been privileged to work on financial
-          applications in the International Banking space at Paycom in Dallas,
-          TX.
+          Hey there, I&apos;m Ricky. I&apos;m a software engineer from Houston,
+          TX. Over the past 2 years, I&apos;ve been privileged to work on
+          financial applications in the International Banking space at Paycom in
+          Dallas, TX.
         </p>
         <p className="text-white text-2xl font-light tracking-tight mb-12">
-          I graduated magna cum laude from Baylor University in '22 with a
+          I graduated magna cum laude from Baylor University in 2022 with a
           double major in Management Information Systems and Entrepreneurship &
           Corporate Innovation.
         </p>
