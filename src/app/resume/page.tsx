@@ -1,25 +1,18 @@
-"use client";
-
-import { useRouter } from "next/navigation";
+import PageLayout from "@/components/PageLayout";
+import Link from "next/link";
 
 export default function Resume() {
-  const router = useRouter();
-
   return (
-    <div className="min-h-screen flex flex-col items-center pt-[20vh] pb-36">
+    <PageLayout>
       <div className="w-full max-w-5xl px-4 flex items-center">
-        <h1
-          onClick={() => router.back()}
-          className="text-white text-3xl font-light tracking-tight mb-12 hover:text-yellow-500"
-        >
-          portfolio/
+        <h1 className="text-white text-3xl font-light tracking-tight mb-12 hover:text-yellow-500">
+          <Link href="/">portfolio/</Link>
         </h1>
         <h1 className="text-white text-3xl font-light tracking-tight mb-12">
           resume
         </h1>
       </div>
       <div className="w-full max-w-5xl px-4">
-        {/* // TODO: Add resume */}
         <h1 className="text-white text-3xl font-light tracking-tight mb-12">
           Experience
         </h1>
@@ -52,29 +45,28 @@ export default function Resume() {
               (frontend), C# with Entity Framework Core (backend), and MySql
               database for robust, scalable functionality.
             </p>
-
-            <p className="text-white text-lg font-light tracking-tight">
-              Collaborated with cross-functional teams to deliver high-quality,
-              innovative software solutions in fast-paced, dynamic environments.
-            </p>
             <p className="text-white text-lg font-light tracking-tight">
               Demonstrated expertise in React and TypeScript.
+            </p>
+            <p className="text-white text-lg font-light tracking-tight pl-4">
+              Asked to speak on React, leading multiple talks and workshops.
             </p>
             <p className="text-white text-lg font-light tracking-tight pl-4">
               Architected a mission critical dashboard used to manage millions
               of dollars in daily transactions.
             </p>
             <p className="text-white text-lg font-light tracking-tight pl-4">
-              Asked to speak on React and TypeScript, leading multiple talks and
-              workshops.
-            </p>
-            <p className="text-white text-lg font-light tracking-tight pl-4">
               Consistently innovated, delivering reusable components and
               patterns used by multiple teams.
+            </p>
+            <p className="text-white text-lg font-light tracking-tight">
+              Improved performance on the Back-office dashboard by 43.5x on the
+              backend [c# + EF Core] through a combination of query optimization
+              and caching.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </PageLayout>
   );
 }
